@@ -1,0 +1,4 @@
+#dataset
+*.csv
+#python cache file
+_pycache_
