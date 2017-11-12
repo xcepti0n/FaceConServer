@@ -6,10 +6,9 @@ from sklearn.metrics import confusion_matrix
 from sklearn.naive_bayes import GaussianNB
 import numpy as np
 FILE_PATH="./user_data_unshuffled.csv"
-# Headers 
-headers = ["id","name","screen_name","statuses_count","followers_count","friends_count","favourites_count","profile_type"]
 #loadcsv file
 def predict_using_classifier(model,tweets,followers,following,likes,lists,joined_date,has_url,location):
+    #loadcsv file
     dataset = pd.read_csv(FILE_PATH)
     # Get basic statistics of the loaded dataset
     #print(dataset.dtypes)
